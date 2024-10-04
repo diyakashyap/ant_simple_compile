@@ -14,7 +14,7 @@ pipeline
             }
         }
 
-        stage('package the code')
+        stage('package code')
         {
             steps
             {
