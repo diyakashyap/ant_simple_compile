@@ -20,7 +20,7 @@ pipeline
             {
                 withAnt(installation: 'ANT_Home', jdk: 'JDK_home') 
                 {
-                    sh 'ant package -DskipTests'
+                    sh 'ant clean package -DskipTests'
                 }        
             }
         }
