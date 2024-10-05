@@ -14,15 +14,15 @@ pipeline
             }
         }
 
-        stage('package code')
-        {
-            steps
-            {
-                withAnt(installation: 'ANT_Home', jdk: 'JDK_home') 
-                {
-                    sh 'ant clean package -DskipTests'
-                }        
-            }
-        }
+        // stage('package code')
+        // {
+        //     steps
+        //     {
+        //         withAnt(installation: 'ANT_Home', jdk: 'JDK_home') 
+        //         {
+        //             sh 'ant clean package -DskipTests'
+        //         }        
+        //     }
+        // }
     }
 }
